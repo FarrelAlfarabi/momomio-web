@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { brand, hero, products, whySection, storySection, shopLinks, socialLinks } from "./data";
+import { hero, products, whySection, storySection, shopLinks, socialLinks } from "./data";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
