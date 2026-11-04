@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { hero, products, whySection, storySection, shopLinks, socialLinks } from "./data";
+import { brand, hero, products, whySection, storySection, shopLinks, socialLinks } from "./data";
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,12 +23,12 @@ function Navbar() {
       <nav className={`navbar${scrolled ? " scrolled" : ""}`}>
         <div className="navbar-brand">
           <span className="navbar-logo-text">
-            Momo<span>Mio</span>
+            {brand.logoMain}<span>{brand.logoAccent}</span>
           </span>
         </div>
         <ul className="navbar-links">
           <li><a href="#products" onClick={(e) => handleNav(e, "products")}>Produk</a></li>
-          <li><a href="#why" onClick={(e) => handleNav(e, "why")}>Mengapa MomoMio</a></li>
+          <li><a href="#why" onClick={(e) => handleNav(e, "why")}>Mengapa {brand.name}</a></li>
           <li><a href="#story" onClick={(e) => handleNav(e, "story")}>Tentang Kami</a></li>
           <li>
             <a
@@ -52,7 +52,7 @@ function Navbar() {
       </nav>
       <div className={`navbar-mobile${menuOpen ? " open" : ""}`}>
         <a href="#products" onClick={(e) => handleNav(e, "products")}>Produk</a>
-        <a href="#why" onClick={(e) => handleNav(e, "why")}>Mengapa MomoMio</a>
+        <a href="#why" onClick={(e) => handleNav(e, "why")}>Mengapa {brand.name}</a>
         <a href="#story" onClick={(e) => handleNav(e, "story")}>Tentang Kami</a>
         <a href="#shop" onClick={(e) => handleNav(e, "shop")}>Beli Sekarang</a>
       </div>
@@ -236,7 +236,7 @@ function Shop() {
         <span className="section-label">Beli Sekarang</span>
         <h2 className="section-headline">Tersedia di Marketplace Favoritmu</h2>
         <p className="section-sub" style={{ margin: "0 auto", textAlign: "center" }}>
-          Cari MomoMio di toko online favoritmu. Gratis ongkir dan promo menarik tersedia!
+          Cari {brand.name} di toko online favoritmu. Gratis ongkir dan promo menarik tersedia!
         </p>
         <div className="shop-links">
           {shopLinks.map((s) => (
@@ -263,7 +263,7 @@ function Footer() {
       <div className="footer-inner">
         <div className="footer-brand">
           <span className="footer-logo">
-            Momo<span>Mio</span>
+            {brand.logoMain}<span>{brand.logoAccent}</span>
           </span>
           <p className="footer-tagline">
             Protein Praktis & Teman Tumbuh Cerdas Anak. Produk pertama fortifikasi protein untuk anak Indonesia.
@@ -293,7 +293,7 @@ function Footer() {
         <div>
           <p className="footer-col-title">Info</p>
           <ul className="footer-col-links">
-            <li><a href="#why">Mengapa MomoMio</a></li>
+            <li><a href="#why">Mengapa {brand.name}</a></li>
             <li><a href="#story">Tentang Kami</a></li>
             <li><a href="#shop">Beli Sekarang</a></li>
           </ul>
@@ -301,7 +301,7 @@ function Footer() {
       </div>
       <div className="footer-bottom">
         <span className="footer-copy">
-          &copy; {new Date().getFullYear()} MomoMio. All rights reserved.
+          &copy; {new Date().getFullYear()} {brand.name}. All rights reserved.
         </span>
         <div className="footer-halal">
           <span>HALAL Certified</span>
