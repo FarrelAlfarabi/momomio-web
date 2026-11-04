@@ -1,12 +1,14 @@
-// MomoMio Brand Data - Single source of truth for all site content
+// Brand Data - Single source of truth for all site content
 
 export const brand = {
-  name: "MomoMio",
+  name: "Nomiko",
+  logoMain: "Nomi",
+  logoAccent: "ko",
   tagline: "Protein Praktis & Teman Tumbuh Cerdas Anak",
   taglineEn: "Your Bright Growth Buddy",
   description:
     "Indonesia's first protein-fortified rice seasoning, made for toddlers and trusted by parents. No MSG, no GMO — just real nutrition that kids actually love.",
-  nav: ["Products", "Why MomoMio", "Our Story", "Find Us"],
+  nav: ["Products", "Why Nomiko", "Our Story", "Find Us"],
 };
 
 export const hero = {
@@ -64,7 +66,7 @@ export const products = [
 ];
 
 export const whySection = {
-  headline: "Kenapa MomoMio?",
+  headline: "Kenapa Nomiko?",
   subtext:
     "1 dari 5 anak Indonesia di bawah 5 tahun mengalami stunting — dan kurangnya asupan protein adalah penyebab utamanya.",
   stat: "1 dari 5",
@@ -83,7 +85,7 @@ export const whySection = {
     {
       icon: "💪",
       title: "+50% Protein Harian",
-      desc: "Satu taburan MomoMio memenuhi lebih dari setengah kebutuhan protein harian anak.",
+      desc: "Satu taburan Nomiko memenuhi lebih dari setengah kebutuhan protein harian anak.",
     },
     {
       icon: "🏅",
@@ -95,7 +97,7 @@ export const whySection = {
 
 export const storySection = {
   headline: "Teman Tumbuh Si Kecil",
-  text: "MomoMio lahir dari satu pertanyaan sederhana: kenapa belum ada produk yang benar-benar fokus pada protein untuk anak Indonesia? Kami hadir sebagai brand pertama yang menjadikan fortifikasi protein sebagai inti — bukan tambahan.",
+  text: "Nomiko lahir dari satu pertanyaan sederhana: kenapa belum ada produk yang benar-benar fokus pada protein untuk anak Indonesia? Kami hadir sebagai brand pertama yang menjadikan fortifikasi protein sebagai inti — bukan tambahan.",
   text2:
     "Si Oren, maskot kami, adalah kucing oren yang ceria, penasaran, dan penuh kasih — sama seperti semangat yang ingin kami bawa ke setiap meja makan keluarga Indonesia.",
   mascotImages: [
@@ -125,6 +127,6 @@ export const shopLinks = [
 ];
 
 export const socialLinks = [
-  { name: "Instagram", url: "#", handle: "@momomio.id" },
-  { name: "TikTok", url: "#", handle: "@momomio.id" },
+  { name: "Instagram", url: "#", handle: "@nomiko.id" },
+  { name: "TikTok", url: "#", handle: "@nomiko.id" },
 ];

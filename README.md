@@ -1,6 +1,6 @@
-# MomoMio Website
+# Nomiko Website
 
-Brand website for MomoMio — Indonesia's first protein-fortified rice seasoning for toddlers.
+Brand website for Nomiko — Indonesia's first protein-fortified rice seasoning for toddlers.
 
 **Stack:** React 17 + CRA, deployed on Vercel
 
@@ -9,7 +9,7 @@ Brand website for MomoMio — Indonesia's first protein-fortified rice seasoning
 ## Project Structure
 
 ```
-momomio-web/
+nomiko-web/
 ├── public/
 │   ├── index.html
 │   └── images/              ← all brand images live here
@@ -57,7 +57,7 @@ Opens at `http://localhost:3000`
 git init
 git add .
 git commit -m "initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/momomio-web.git
+git remote add origin https://github.com/YOUR_USERNAME/nomiko-web.git
 git push -u origin main
 ```
 
@@ -121,7 +121,7 @@ Drop the new file into `public/images/` with the same filename. No code change n
 
 ---
 
-## Colors (from MomoMio brandbook)
+## Colors (from Nomiko brandbook)
 
 | Name | Hex |
 |---|---|
